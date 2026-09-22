@@ -1,6 +1,10 @@
 venv/
 __pycache__/
 *.pyc
-data/
 .pytest_cache/
-requirements.txt
+
+.ipynb_checkpoints/
+.vscode/
+
+data/
+.env
