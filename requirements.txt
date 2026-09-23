@@ -1,17 +1,12 @@
-# ML
 pandas
 numpy
 scikit-learn
 joblib
 
-# EDA / notebooks
 matplotlib
 seaborn
 jupyter
 
-
-
-# Backend
 fastapi
 uvicorn[standard]
 sqlalchemy
