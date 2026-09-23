@@ -1,0 +1,24 @@
+# ML
+pandas
+numpy
+scikit-learn
+joblib
+
+# EDA / notebooks
+matplotlib
+seaborn
+jupyter
+
+
+
+# Backend
+fastapi
+uvicorn[standard]
+sqlalchemy
+pymysql
+cryptography
+pydantic-settings
+python-dotenv
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt==4.0.1
