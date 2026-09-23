@@ -16,5 +16,6 @@ cryptography
 pydantic-settings
 python-dotenv
 python-jose[cryptography]
-passlib[bcrypt]
-bcrypt==4.0.1
+bcrypt
+email-validator
+python-multipart
