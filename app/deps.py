@@ -1,10 +1,11 @@
-from fastapi import Depends, HTTPException, status
+from fastapi import Depends, HTTPException, Request, status
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
 
 from app.core.security import decode_token
 from app.db.database import SessionLocal
 from app.db.models import User
+from app.ml.predictor import ChurnPredictor
 
 
 def get_db():
@@ -13,6 +14,10 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
+def get_predictor(request: Request) -> ChurnPredictor:
+    return request.app.state.predictor
 
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")

@@ -5,10 +5,10 @@ from app.ml.config import RAW_DATA_PATH, CLEAN_DATA_PATH, TARGET_COLUMN, DROP_CO
 
 class DataCleaner:
 
-    def __init__(self, raw_path=RAW_DATA_PATH, clean_path=CLEAN_DATA_PATH):
+    def __init__(self, raw_path=RAW_DATA_PATH, clean_path=CLEAN_DATA_PATH, df=None):
         self.raw_path = raw_path
         self.clean_path = clean_path
-        self.df = None
+        self.df = df
 
     def load(self):
         self.df = pd.read_csv(self.raw_path)
