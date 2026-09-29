@@ -171,8 +171,4 @@ Results on the test set (20% of the data):
 |---|---|---|---|---|
 | 0.84 | 0.78 | 0.51 | 0.61 | 0.74 |
 
-I focused more on recall than accuracy, because missing a customer who is going to leave is
-worse than wrongly flagging someone who will stay. The model catches about 78% of the customers
-who churn.
-
 
